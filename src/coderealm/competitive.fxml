@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.fxmisc.richtext.CodeArea?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1000.0" style="-fx-background-color: #ecf6ff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coderealm.CompetitiveController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="510.0" prefWidth="1000.0" style="-fx-background-color: #193d4d;" styleClass="bg1" stylesheets="@home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <SplitPane dividerPositions="0.5601202404809619" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <items>
+                  <AnchorPane>
+                     <children>
+                        <ScrollPane layoutX="118.0" layoutY="48.0" prefHeight="510.0" prefWidth="763.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <VBox prefHeight="510.0" prefWidth="1000.0">
+                                 <children>
+                                    <ImageView fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@resources/p1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@resources/p2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="510.0">
+                     <children>
+                        <CodeArea fx:id="code" layoutX="51.0" layoutY="99.0" onKeyPressed="#write" prefHeight="351.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="754.0" style="-fx-background-color: #404040;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exitIcon" fitHeight="50.0" fitWidth="47.0" layoutX="1.0" layoutY="1.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-back-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="exit" layoutX="1.0" layoutY="6.0" opacity="0.66" prefHeight="40.0" prefWidth="136.0" styleClass="bt" stylesheets="@home.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="languageComboBox" layoutX="493.0" layoutY="9.0" onAction="#languageSelect" prefHeight="32.0" prefWidth="183.0" promptText="select language" style="-fx-border-color: #7985d2;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="problemComboBox" layoutX="691.0" layoutY="9.0" onAction="#problemSelect" prefHeight="32.0" prefWidth="183.0" promptText="select problem" style="-fx-border-color: #7985d2;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Label fx:id="submit" alignment="CENTER" layoutX="891.0" layoutY="9.0" onMouseClicked="#run" opacity="0.66" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: rgb(0, 27, 51); -fx-background-radius: 50 50 50 50;" styleClass="bt" stylesheets="@home.css" text="Submit" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="status" alignment="CENTER" ellipsisString="" layoutX="176.0" layoutY="10.0" prefHeight="32.0" prefWidth="298.0" style="-fx-background-color: rgb(0, 27, 51);" text="No status yet" textFill="#f5eeee" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

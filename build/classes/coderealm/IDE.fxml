@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.fxmisc.richtext.CodeArea?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1000.0" style="-fx-background-color: #ecf6ff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coderealm.IDEController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="510.0" prefWidth="1000.0" style="-fx-background-color: #193d4d;" styleClass="bg1" stylesheets="@home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <SplitPane dividerPositions="0.7235528942115769" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <items>
+                  <CodeArea fx:id="code" onKeyTyped="#write" prefHeight="510.0" prefWidth="700.0" />
+                  <AnchorPane prefHeight="510.0">
+                     <children>
+                        <TextArea fx:id="inputs" layoutY="15.0" prefHeight="217.0" prefWidth="265.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                        <TextArea fx:id="outputs" layoutX="1.0" layoutY="248.0" prefHeight="253.0" prefWidth="265.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                        <Label layoutX="1.0" text="INPUT" textFill="#171616" AnchorPane.leftAnchor="5.0" />
+                        <Label layoutX="1.0" layoutY="232.0" text="OUTPUT" textFill="#141313" AnchorPane.leftAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="754.0" style="-fx-background-color: #404040;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exitIcon" fitHeight="50.0" fitWidth="47.0" layoutX="1.0" layoutY="1.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-menu-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="exit" layoutX="6.0" layoutY="6.0" opacity="0.66" prefHeight="40.0" prefWidth="136.0" styleClass="bt" stylesheets="@home.css" text="Menu" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="922.0" layoutY="8.0" onMouseClicked="#run" pickOnBounds="true" preserveRatio="true" styleClass="bt">
+               <image>
+                  <Image url="@icon/icons8-play-64.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ComboBox fx:id="languageComboBox" layoutX="731.0" layoutY="10.0" onAction="#languageSelect" prefHeight="27.0" prefWidth="143.0" promptText="select language" style="-fx-border-color: #7985d2;" styleClass="combo-box">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

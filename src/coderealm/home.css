@@ -1,0 +1,106 @@
+.bg1 {
+    -fx-background-image:url('resources/11.jpg');
+    -fx-background-repeat: stretch; 
+    -fx-background-position: center center;
+   
+}
+.tree-cell {
+    -fx-font: 12px Tahoma;
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+}
+.tree-cell:hover {
+    -fx-background-color: #303030;
+}
+.user {
+    -fx-font: 20px Tahoma;
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+}
+.bt {
+    -fx-background-color: transparent;
+}
+.bt:hover {
+    -fx-background-color: #303030; 
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: rgb(0, 27, 51);
+}
+.combo-box .list-cell {
+    -fx-background-color: #303030;
+    -fx-text-fill: white;
+}
+
+
+
+/*****************************************IDE designs****************************************/
+.styled-text-area {
+    -fx-font-size: 18;
+    -fx-background-color: rgb(0, 27, 51);
+}
+
+.styled-text-area .text{
+    -fx-fill:sandybrown; /*font colour*/
+}
+
+.styled-text-area .text.assignment {
+    -fx-fill: orange;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.keyword {
+    -fx-fill: rgb(110, 252, 187);
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.semicolon {
+    -fx-fill: rgb(110, 252, 187);
+    -fx-font-weight: bold;
+}
+.styled-text-area .text.operator {
+    -fx-fill:#26C6DA;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.paren {
+    -fx-fill: yellow;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.bracket {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.brace {
+    -fx-fill: yellow;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text.string {
+    -fx-fill: rgb(58,213,11);
+}
+
+.styled-text-area .text.comment {
+    -fx-fill: rgb(0, 200, 255);
+}
+
+.paragraph-box:has-caret{
+    -fx-background-color: rgb(50, 77, 101); /*writing line*/
+}
+.styled-text-area .selection {
+    -fx-fill: #2e6b64;
+}
+.lineno {
+    -fx-background-color: #596063;
+    -fx-font-size: 15;
+}
+.text-area .content { 
+  -fx-background-color: #cfd8dc; 
+  
+  
+}

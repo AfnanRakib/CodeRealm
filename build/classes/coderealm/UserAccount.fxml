@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1000.0" style="-fx-background-color: #ecf6ff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coderealm.UserAccountController">
+  <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="754.0" style="-fx-background-color: #404040;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exitIcon" fitHeight="50.0" fitWidth="47.0" layoutX="1.0" layoutY="1.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-back-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="exit" layoutY="-1.0" opacity="0.66" prefHeight="50.0" prefWidth="208.0" styleClass="bt" stylesheets="@home.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane opacity="0.94" prefHeight="510.0" prefWidth="1000.0" style="-fx-background-color: #404040;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <TextField fx:id="userAccName" editable="false" layoutX="728.0" layoutY="215.0" prefHeight="41.0" prefWidth="244.0" style="-fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="user">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font></TextField>
+            <TextField fx:id="userAccFName" editable="false" layoutX="728.0" layoutY="281.0" prefHeight="41.0" prefWidth="244.0" style="-fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="user">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font></TextField>
+            <TextField fx:id="userAccLName" editable="false" layoutX="728.0" layoutY="346.0" prefHeight="41.0" prefWidth="244.0" style="-fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="user">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font></TextField>
+            <TextField fx:id="userAccPhnNo" editable="false" layoutX="728.0" layoutY="417.0" prefHeight="41.0" prefWidth="244.0" style="-fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="user">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font></TextField>
+            <Label layoutX="560.0" layoutY="215.0" prefHeight="41.0" prefWidth="131.0" text="User's name:" textFill="#e4dfdf">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="559.0" layoutY="289.0" prefHeight="33.0" prefWidth="118.0" text="First name:" textFill="#e4dfdf">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="558.0" layoutY="354.0" prefHeight="33.0" prefWidth="118.0" text="Last name:" textFill="#e4dfdf">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="558.0" layoutY="425.0" prefHeight="33.0" prefWidth="118.0" text="Phone_no:" textFill="#e4dfdf">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="687.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/pngwing.com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="50.0" prefHeight="510.0" prefWidth="554.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="446.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="510.0" fitWidth="518.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-161.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@resources/4346013.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>  
+</AnchorPane>

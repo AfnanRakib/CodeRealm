@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1000.0" style="-fx-background-color: #ecf6ff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coderealm.IterativeStatementsController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="754.0" style="-fx-background-color: #404040;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="exitIcon" fitHeight="50.0" fitWidth="47.0" layoutX="1.0" layoutY="1.0" onMouseClicked="#goBack" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-back-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="exit" layoutX="6.0" layoutY="6.0" onMouseClicked="#goBack" opacity="0.66" prefHeight="40.0" prefWidth="202.0" styleClass="bt" stylesheets="@home.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <HBox layoutX="608.0" layoutY="5.0">
+               <children>
+                  <Label fx:id="tryIDE" alignment="CENTER" onMouseClicked="#goToIDE" opacity="0.66" prefHeight="38.0" prefWidth="122.0" styleClass="bt" stylesheets="@home.css" text="Try in IDE" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="80.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="prev" alignment="CENTER" ellipsisString="" onMouseClicked="#goPrev" opacity="0.66" prefHeight="38.0" prefWidth="97.0" styleClass="bt" stylesheets="@home.css" text="Previous" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="next" alignment="CENTER" onMouseClicked="#goNext" opacity="0.66" prefHeight="30.0" prefWidth="59.0" styleClass="bt" stylesheets="@home.css" text="Next" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ScrollPane prefHeight="510.0" prefWidth="1000.0" AnchorPane.topAnchor="50.0">
+         <content>
+            <VBox>
+               <children>
+                  <ImageView fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/iterative1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/iterative2.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

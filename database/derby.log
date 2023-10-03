@@ -1,0 +1,7 @@
+Apache Derby Network Server - 10.2.2.0 - (485682) started and ready to accept connections on port 1527 at 2023-08-20 18:07:23.659 GMT 
+----------------------------------------------------------------
+2023-08-20 18:07:23.844 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.2.2.0 - (485682): instance c013800d-018a-1421-55c9-ffff927fd960
+on database directory D:\java_project\coderealm (0.4)-20230820T175701Z-001\coderealm (0.4)\CodeRealm\database\coderealmdata  
+
+Database Class Loader started - derby.database.classpath=''
