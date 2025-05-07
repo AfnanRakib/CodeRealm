@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/CodeRealm.png" alt="logo" width="200" height="auto" />
+  <img src="CodeRealm.png" alt="logo" width="200" height="auto" />
   <h1>Code Realm</h1>
 </div>  
 
